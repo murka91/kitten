@@ -1,0 +1,643 @@
+/* Общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F8F3E6;
+    color: #2C2A29;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth; /* Включает плавную прокрутку */
+}
+
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .section {
+    padding: 40px 0;
+    background-color: #F8F3E6;
+    text-align: center;
+  }
+  
+  .section__header {
+    margin-bottom: 30px;
+  }
+  
+  .section__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: #A45A2A;
+  }
+  
+  .section__image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .section__text {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A45A2A;
+    color: #F8F3E6;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform:uppercase;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #E1B7A1 ;
+    color: #2C2A29;
+  }
+  
+  /* Шапка */
+  /* Общие стили остаются без изменений */
+
+/* Шапка */
+.header {
+    background-color: #F8F3E6;
+    padding: 15px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #A45A2A;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+
+.header__logo-paw {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav__link {
+    color: #A45A2A; /* Цвет текста */
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+    color: #E1B7A1; /* Цвет при наведении */
+}
+
+.header__actions {
+    display: flex;
+    align-items: center;
+}
+
+.header__auth {
+    display: block;
+    margin-left: 20px;
+}
+
+.header__auth-icon {
+    width: 24px;
+    height: 24px;
+  fill: #A45A2A;
+}
+
+.header__auth:hover .header__auth-icon {
+  fill: #E1B7A1;
+}
+
+.header__social {
+    display: block;
+    margin-left: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.header__social:hover {
+    opacity: 0.7; /* При наведении немного уменьшаем прозрачность */
+}
+
+.header__social-icon {
+    width: 24px;
+    height: 24px;
+}
+.header__social-icon{
+    fill: #A45A2A; /* Изначальный цвет */
+    transition: fill 0.3s ease; /* Плавный переход */
+}
+
+.header__social:hover .header__social-icon {
+    fill: #E1B7A1; /* Цвет при наведении */
+}
+
+
+
+  /* Стили для блока "Котята" */
+  .kittens__list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .kitten__item {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center; /* Центрирование по горизонтали */
+  }
+  
+  .kitten__image {
+    width: 100%;
+    height: auto; /* Следим за пропорциями */
+    border-radius: 8px; /* Немного скруглим углы */
+    margin-bottom: 10px;
+  }
+  
+  .kitten__name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .kitten__description {
+    font-size: 14px;
+    color: #555; /* Цвет текста */
+  }
+  
+  /* Стили для блока "Новости" */
+  
+  .news__list {
+    display: flex;
+    flex-direction: column; /* Расположение новостей в столбик */
+  }
+  
+  .news__item {
+    text-align: left; /* Выравнивание по левому краю */
+    margin-bottom: 20px; /* Расстояние между новостями */
+    padding: 15px; /* Отступы от краёв блока */
+    background-color: #fff; /* Фон для каждой новости */
+    border-radius: 8px; /* Скруглим углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Добавим тень */
+  }
+  
+  .news__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .news__date {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .news__description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  /* Подвал */
+  .footer {
+    background-color: #222; /* Темный фон */
+    padding: 40px 0;
+    
+        
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+
+.footer__logo a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer__logo p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+.footer__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__nav li {
+    margin-bottom: 5px;
+}
+
+.footer__nav a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; /* Чтобы ссылки занимали всю ширину */
+}
+
+.footer__nav a:hover {
+    color: #fff;
+}
+
+.footer__contacts p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0 0 5px 0; /* Добавим небольшой отступ снизу */
+}
+
+.footer__contacts a {
+    color: #A45A2A; /* Красный цвет для email */
+    text-decoration: none;
+}
+
+.footer__social {
+    margin-top: 10px;
+}
+
+.footer__social a {
+    display: inline-block; /* чтобы можно было задать ширину и высоту */
+    margin-right: 10px; 
+}
+
+.footer__social img {
+    width: 24px;
+    height: 24px;
+}
+  /* Вторая страница */
+  :root {
+    --primary-color:#A45A2A ;
+    --secondary-color: #E1B7A1;
+    --background-color: #F8F3E6;
+    --text-color: #2C2A29;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 60px 0; /* Увеличиваем отступы */
+    background-color: var(--background-color);
+    text-align: center;
+    position: relative; /* Для позиционирования декоративных элементов */
+    overflow: hidden; /* Чтобы анимация не выходила за границы */
+}
+
+.section__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 40px; /* Увеличиваем отступ */
+    position: relative;
+    z-index: 1; /* Чтобы заголовок был над декоративным элементом */
+}
+
+/* Стили для страницы "О питомнике" */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 40px; /* Увеличиваем отступ */
+}
+
+.about-image {
+    width: 45%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text {
+    width: 45%;
+    text-align: left;
+    font-size: 17px;
+    color: rgba(44, 42, 41, 0.8); /* Немного приглушаем цвет */
+}
+
+.about-text p {
+    margin-bottom: 20px; /* Увеличиваем отступ */
+}
+
+.decorative-element {
+    width: 100px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.priorities-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.priorities-list li {
+    font-size: 17px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.priorities-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Стили для секции "Наша команда" */
+.team-section {
+  padding: 60px 0; /* Увеличены отступы */
+}
+
+.section__title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  
+}
+
+.team-list {
+  display: flex;
+  justify-content: center; /* Центрирование карточек */
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 280px; /* Фиксированная ширина для карточек */
+  margin: 15px; /* Отступы между карточками */
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 15px; /* Закругленные углы */
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  border-radius: 15px; /* Закругленные углы */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+}
+
+.team-member__inner {
+  background-color: #fff; /* Белый фон для карточек */
+  border-radius: 15px; /* Закругленные углы */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.team-member__image {
+  width: 120px; /* Фиксированный размер изображения */
+  height: 120px;
+  border-radius: 50%; /* Круглая форма */
+  margin-bottom: 15px;
+  border: 4px solid #A45A2A; /* Цветная обводка */
+}
+
+.team-member__name {
+  font-size: 24px; /* Увеличенный размер шрифта */
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #A45A2A; /* Цвет имени */
+}
+
+.team-member__position {
+  font-size: 16px;
+  color: #555; /* Темно-серый цвет для позиции */
+  margin-bottom: 10px;
+}
+
+.team-member__description {
+  font-size: 14px;
+  line-height: 1.6; /* Увеличенный межстрочный интервал */
+  color: #2C2A29; /* Серый цвет для описания */
+  padding: 10px;
+  border-radius: 8px; /* Закругленные углы для описания */
+  background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+}
+
+
+
+
+/* Стили для секции "Наши ценности" */
+.values-section {
+  background-color: var(--background-color);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.values-section .section__title {
+  color: var(--primary-color);
+  margin-bottom: 40px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.value-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.value-item i {
+font-size: 40px;
+color: var(--primary-color);
+margin-bottom: 15px;
+}
+
+.value-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.value-item p {
+  font-size: 16px;
+  color: #777;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* 3 страница*/
+/* Interactive Cat Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  @media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        margin-bottom: 10px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__link {
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+    .header__actions {
+        margin-top: 10px;
+    }
+
+    
+    .kittens__list {
+      flex-direction: column; /* располагаем элементы в столбик */
+      align-items: center;
+    }
+  
+    .kitten__item {
+      width: 80%; /* и делаем их пошире */
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__nav, .footer__contacts {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность 2 страница */
+@media (max-width: 768px) {
+  .about-content {
+      flex-direction: column;
+  }
+
+  .about-image,
+  .about-text {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .team-member {
+      width: 80%;
+  }
+
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .values-list {
+    text-align: center;
+  }
+
+  .values-list li {
+      text-align: left; /* Вернуть выравнивание текста влево на маленьких экранах */
+  }
+  .values-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.achievements-list li {
+    text-align: center;
+}
+}
+
